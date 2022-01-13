@@ -34,6 +34,7 @@ img{
   width: 300px;
   background-color: whitesmoke;
   height: fit-content;
+  gap:10px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -149,3 +150,12 @@ select{
   align-items: center;
 }
 
+@media screen and (max-width:570px) {
+  .singleproduct{
+    height: 500px;
+  }
+  figcaption{
+    margin-bottom: 25px;
+
+  }
+}

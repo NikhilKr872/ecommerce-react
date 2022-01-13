@@ -124,7 +124,7 @@ export default class App extends Component {
                   <img src={prod.image} alt={prod.title} title={prod.title} />
                   <figcaption>{prod.title}</figcaption>
                 </figure>
-                <div><ReactStars count={5} value={prod.rating.rate} size={25} isHalf={true} edit={false} /></div>
+                <div className='ReactStars'><ReactStars count={5} value={prod.rating.rate} size={25} isHalf={true} edit={false} /></div>
                 <p>${prod.price}</p>
                 <div className='stock'>
                   {this.state.stockArr[prod.id]===0?<p style={{color:"red"}}>Out of Stock</p>:<p>Item in Stock</p>}
