@@ -2,37 +2,150 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Products */
+
+.products{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px;
+  padding: 20px;
+  height: fit-content;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* product image */
+
+img{
+  height: 100px;
+  width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Single product */
+
+.singleproduct{
+  border: 1px solid whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 300px;
+  background-color: whitesmoke;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.singleproduct:hover{
+  box-shadow: 1px 0px 10px lightgrey;
+}
+
+/* product Description */
+
+.description{
+  text-align: center;
+}
+
+/* figure */
+figure{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:10px;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+figcaption{
+  width: 100%;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Description Button */
+
+.descriptionbtn{
+  height: 30px;
+  width: fit-content;
+  padding: 5px;
+  border:none;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.descriptionbtn:hover{
+  box-shadow: 1px 0px 10px lightgrey;
+}
+
+
+/* dropdown */
+
+.dropdown{
+
+  text-align: right;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+select{
+  height: 40px;
+}
+
+.dropdown select{
+  margin-left: 10px;
+}
+
+/* loader */
+
+.loader{
+  text-align: center;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+ 
+}
+.lds-dual-ring:after {
+  
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(0, 0, 0);
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+
+
+/* Stock */
+.stock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.additem{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+  align-items: center;
+}
+

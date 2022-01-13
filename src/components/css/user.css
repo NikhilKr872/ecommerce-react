@@ -1,0 +1,50 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.user:hover{
+    box-shadow: 1px 0px 10px lightgrey;
+}
+
+.userprofilefig{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.profileImg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    
+    
+}
+
+.details figcaption{
+    text-align: center;
+}
+
+.addricons{
+    height: 50px;
+    width: 50px;
+}

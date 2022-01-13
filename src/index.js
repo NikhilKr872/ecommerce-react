@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import Review from "./components/Review"
+import User from "./components/User"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}/>
+        <Route path="/review" element={<Review />}/>
+        <Route path="/user" element={<User />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
