@@ -73,18 +73,18 @@
   .Header{
       flex-direction: column;
       justify-content: center;
-
+        gap: 10px;
       align-items: center;
       
   }
 
   .Nav{
-      flex-direction: column;
+      flex-direction: row;
       
       gap:5px;
   }
   .iconsparent{
-      flex-direction: column;
+      flex-direction: row;
       gap:10px;
   }
 

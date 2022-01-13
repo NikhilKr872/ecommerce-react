@@ -25,7 +25,7 @@ export default class Header extends Component {
             this.setState({search:false})
         }
     }
-
+ 
     render() {
         return (
             <>
