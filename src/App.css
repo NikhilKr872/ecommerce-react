@@ -151,9 +151,7 @@ select{
 }
 
 @media screen and (max-width:570px) {
-  .singleproduct{
-    height: 500px;
-  }
+  
   figcaption{
     margin-bottom: 25px;
 
