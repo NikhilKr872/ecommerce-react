@@ -8,6 +8,12 @@ import Footer from "./Footer"
 import "./css/user.css"
 
 export default class User extends Component {
+
+    componentDidMount=()=>{
+        document.title="User Information"
+    }
+
+
     render() {
         return (
             <>

@@ -25,6 +25,7 @@ export default class App extends Component {
 
   componentDidMount = () => {
     this.getData()
+    document.title="Ecommerce Site"
   }
 
   set = (pData) => {

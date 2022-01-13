@@ -6,6 +6,12 @@ import user from "./images/user.jpeg"
 import ReactStars from "react-rating-stars-component";
 
 export default class Review extends Component {
+
+    componentDidMount(){
+        document.title="Reviews"
+    }
+
+
     render() {
         return (<>
         <Header />
