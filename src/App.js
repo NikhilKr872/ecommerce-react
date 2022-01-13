@@ -39,7 +39,7 @@ export default class App extends Component {
 
   getData = async () => {
     try {
-      const pBuffer = await fetch("http://fakestoreapi.com/products")
+      const pBuffer = await fetch("https://fakestoreapi.com/products")
       const pData = await pBuffer.json()
       this.set(pData)
 
@@ -64,7 +64,7 @@ export default class App extends Component {
       return;
     }
     try {
-      const buffer = await fetch(`http://fakestoreapi.com/products/category/${id.target.value}`)
+      const buffer = await fetch(`https://fakestoreapi.com/products/category/${id.target.value}`)
       const data = await buffer.json()
       this.set(data)
     }
