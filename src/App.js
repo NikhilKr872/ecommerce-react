@@ -115,11 +115,11 @@ export default class App extends Component {
             </select>
           </label>
         </div>
-        {this.state.error ? <Error /> : !this.state.recieved ? <Loader /> : (<div className='d-flex flex-row flex-wrap justify-content-between align-items-center products' id="shop">
+        {this.state.error ? <Error /> : !this.state.recieved ? <Loader /> : (<div className='d-flex flex-row flex-wrap justify-content-center align-items-center products' id="shop">
 
           {
             this.state.products.map((prod) => {
-              return (<div key={prod.id} className="singlep d-flex flex-column align-items-center justify-content-center text-center bg-light p-3 m-2 shadow bg-white rounded">
+              return (<div key={prod.id} className="singlep d-flex flex-column align-items-center justify-content-center text-center bg-light p-3 shadow bg-white rounded">
                 <figure className='m-0'>
                   <img src={prod.image} alt={prod.title} title={prod.title} style={{width:"150px",height:"150px"}}/>
                   <figcaption className='font-weight-bold h-50'>{prod.title}</figcaption> 
