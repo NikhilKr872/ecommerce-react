@@ -26,7 +26,7 @@ export default class Header extends Component {
         }
     }
  
-    render() {
+    render() { 
         return (
             <>
             <div className='Header'>

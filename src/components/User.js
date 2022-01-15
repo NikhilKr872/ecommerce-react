@@ -12,7 +12,7 @@ export default class User extends Component {
     componentDidMount=()=>{
         document.title="User Information"
     }
-
+ 
 
     render() {
         return (

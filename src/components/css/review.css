@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    
     background-color: white;
     padding: 20px;
 }
@@ -14,6 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
     
 }
 
@@ -36,6 +37,7 @@
 }
 
 
+
 .singleUserReview figure img{
     height: 60px;
     width: 60px;
@@ -47,6 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 
 @media screen and (max-width: 570px) {

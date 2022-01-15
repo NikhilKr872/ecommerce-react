@@ -25,7 +25,7 @@ export default class App extends Component {
  
   componentDidMount = () => {
     this.getData()
-    document.title="Ecommerce Site"
+   
   }
 
   set = (pData) => {
@@ -115,26 +115,26 @@ export default class App extends Component {
             </select>
           </label>
         </div>
-        {this.state.error ? <Error /> : !this.state.recieved ? <Loader /> : (<div className='products' id="shop">
+        {this.state.error ? <Error /> : !this.state.recieved ? <Loader /> : (<div className='d-flex flex-row flex-wrap justify-content-between align-items-center products' id="shop">
 
           {
             this.state.products.map((prod) => {
-              return (<div key={prod.id} className="singleproduct">
-                <figure>
-                  <img src={prod.image} alt={prod.title} title={prod.title} />
-                  <figcaption style={{fontWeight:"500"}}>{prod.title}</figcaption>
+              return (<div key={prod.id} className="singlep d-flex flex-column align-items-center justify-content-center text-center bg-light p-3 m-2 shadow bg-white rounded">
+                <figure className='m-0'>
+                  <img src={prod.image} alt={prod.title} title={prod.title} style={{width:"150px",height:"150px"}}/>
+                  <figcaption className='font-weight-bold h-50'>{prod.title}</figcaption> 
                 </figure>
-                <div className='ReactStars'><ReactStars count={5} value={prod.rating.rate} size={25} isHalf={true} edit={false} /></div>
-                <p style={{fontWeight:"700"}}>${prod.price}</p>
-                <div className='stock'>
-                  {this.state.stockArr[prod.id]===0?<p style={{color:"red"}}>Out of Stock</p>:<p>Item in Stock</p>}
-                  <span className="additem">
+                <div className='text-center'><ReactStars count={5} value={prod.rating.rate} size={25} isHalf={true} edit={false} /></div>
+                <div style={{fontWeight:"700"}} className='text-center'>${prod.price}</div>
+                <div className='d-flex flex-column justify-content-center'>
+                  {this.state.stockArr[prod.id]===0?<div className='text-danger' >Out of Stock</div>:<div>Item in Stock</div>}
+                  <span>
                    <CgMathMinus/> {this.state.stockArr[prod.id]}<CgMathPlus/>
                   </span>
                 </div>
 
-                <button onClick={() => { this.renderDisc(prod.id) }} className='descriptionbtn'>Description</button>
-                {this.state.descArr[prod.id] ? <p className='description'>{prod.description}</p> : undefined}
+                <button onClick={() => { this.renderDisc(prod.id) }} className='btn btn-light btn-outline-dark'>Description</button>
+                {this.state.descArr[prod.id] ? <p className='text-center'>{prod.description}</p> : undefined}
 
               </div>)
             })

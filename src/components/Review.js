@@ -21,7 +21,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={3.5}/>
@@ -36,7 +36,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={2.5}/>
@@ -51,7 +51,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={4}/>
@@ -66,7 +66,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={3}/>
@@ -81,7 +81,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={3}/>
@@ -96,7 +96,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={3.5}/>
@@ -111,7 +111,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={1.5}/>
@@ -126,7 +126,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={4}/>
@@ -141,7 +141,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={2}/>
@@ -156,7 +156,7 @@ export default class Review extends Component {
                     <div className='singleUserReview'>
                         <figure>
                             <img src={user} alt="User"/>
-                            <figcaption>Lorem Ipsum</figcaption>
+                            <figcaption>John Doe</figcaption>
                         </figure>
                         <div>
                             <ReactStars count={5} isHalf={true} size={25} edit={false} value={3.5}/>
