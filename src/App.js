@@ -99,7 +99,7 @@ export default class App extends Component {
         <Header />
         <Main />
 
-        <div className='dropdown'>
+        <div className='d-flex flex-row justify-content-end w-75 mx-auto'>
           
           <label>Categories
             <select onChange={this.categoriesFunc}>
